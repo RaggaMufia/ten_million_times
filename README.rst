@@ -1,4 +1,4 @@
-Benchmarks for different languages
+Zenchmarks for different languages
 ==================================
 
 We benchmark here for a few languages the CPU usage
@@ -67,22 +67,22 @@ Executable sizes for "print hello 10'000'000 times"
   (``rustc -C prefer-dynamic``)
 * in bytes
 
-======   =============
-lang     size in bytes
-======   =============
-rust            650192 
-rust dyn          9880  
-C                 6720
-asm                608
-java               470
-tcl                181
-pyc                172
-bash               142
-perl                90
-lua                 81
-python              77
-ruby                54
-======   =============
+========  =============
+lang      size in bytes
+========  =============
+rust             650192 
+rust dyn           9880  
+C                  6720
+asm                 608
+java                470
+tcl                 181
+pyc                 172
+bash                142
+perl                 90
+lua                  81
+python               77
+ruby                 54
+========  =============
 
 
 Execution time for hello with output
