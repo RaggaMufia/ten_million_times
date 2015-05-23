@@ -75,9 +75,8 @@ rust dyn           9880
 C                  6720
 asm                 608
 java                470
-tcl                 181
 pyc                 172
-bash                142
+tcl                  92
 perl                 90
 bash                 86
 lua                  81
