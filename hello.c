@@ -2,7 +2,7 @@
 
 main() {
 	int i = 0;
-	while( i < 1000000) {
+	while( i < 10000000) {
     		printf("hello\n");
     		i = i + 1;
 	}

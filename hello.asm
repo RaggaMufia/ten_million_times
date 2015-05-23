@@ -18,7 +18,7 @@ _start:                                         ;tell linker entry point
     mov     ecx,msg                             ;message to write
     mov     ebx,1                               ;file descriptor (stdout)
 
-    mov     long [count],1000000                ;init counter
+    mov     long [count],10000000               ;init counter
 
 _loop:
 
