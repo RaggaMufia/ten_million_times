@@ -1,4 +1,4 @@
-Renchmarks for different languages
+Benchmarks for different languages
 ==================================
 
 We benchmark here for a few languages the CPU usage
