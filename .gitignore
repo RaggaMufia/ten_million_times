@@ -1,9 +1,5 @@
-hello
-hello.asm.exe
-hello.c.exe
-Hello.class
-hello.java
-hello.o
-hello.pyc
-hello.rs.exe
+*.exe
+*.class
+*.o
+*.pyc
 luac.out
