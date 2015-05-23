@@ -79,6 +79,7 @@ tcl                 181
 pyc                 172
 bash                142
 perl                 90
+bash                 86
 lua                  81
 python               77
 ruby                 54
