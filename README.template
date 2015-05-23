@@ -1,0 +1,68 @@
+Benchmarks for different languages
+==================================
+
+We benchmark here for a few languages the CPU usage
+in seconds of:
+
+* printing 'hello' 10Mio times
+* printing 'hello' 10Mio times without actually
+  displaying it
+* incrementing an integer 10Mio times
+* starting up a program
+
+We also have a look at the size of the executable
+and the memory usage.
+
+Memory usage for "print hello 10'000'000 times"
+-----------------------------------------------
+
+* as measured by smem
+
+======  =======  =======  =======
+lang    USS      PSS      RSS
+======  =======  =======  =======
+java      48688    52416    59004
+ruby       6988     7101     9072
+python     2560     3422     6556
+pyc        2544     3424     6544
+perl       1868     1972     3848
+tcl        1252     1850     4676
+luac        512      526     1888
+lua         508      523     2020
+rust        476      509     2260
+C           484      527     2220
+bash        232      432     2956
+asm          16       16       16
+======  =======  =======  =======
+
+USS - unshared
+PSS - proportional
+RSS - resident/non-swapped (including shared memory!)
+
+Executable sizes for "print hello 10'000'000 times"
+---------------------------------------------------
+
+* as measured by ls
+* "rust" is statically linked (default)
+* "rust dyn" is with dynamic linking
+  (``rustc -C prefer-dynamic``)
+* in bytes
+
+======   =============
+lang     size in bytes
+======   =============
+rust            650192 
+rust dyn          9880  
+C                 6720
+asm                608
+java               470
+tcl                181
+pyc                172
+bash               142
+perl                90
+lua                 81
+python              77
+ruby                54
+======   =============
+
+
