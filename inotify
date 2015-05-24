@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while true; do
+	inotifywait --exclude '.*.png|.*.swp' -e modify .
+	cat memory.gnu | gnuplot
+	cat size.gnu   | gnuplot
+	cat cpu.gnu    | gnuplot
+done
