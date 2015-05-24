@@ -57,6 +57,8 @@ USS - unshared
 PSS - proportional
 RSS - resident/non-swapped (including shared memory!)
 
+.. image:: memory.png
+
 
 Executable sizes for "print hello 10'000'000 times"
 ---------------------------------------------------
@@ -83,6 +85,8 @@ lua                  81
 python               77
 ruby                 54
 ========  =============
+
+.. image:: size.png
 
 
 Execution time for hello with output
@@ -168,3 +172,7 @@ tcl        0.004     0.000     0.004
 sh         0.002     0.000     0.000
 ======   =======   =======   =======
 
+.. image:: analysis.png
+
+* note that the data is not 100% coherent. See
+  the analysis.odc file

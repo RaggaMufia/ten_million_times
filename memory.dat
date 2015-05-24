@@ -1,0 +1,14 @@
+lang        USS      USS-PSS
+############################
+java      48688         3728
+ruby       6988          113
+python     2560          862
+pyc        2544          880
+perl       1868          104
+tcl        1252          598
+luac        512           14
+lua         508           15
+rust        476           33
+C           484           43
+bash        232          200
+asm          16            0

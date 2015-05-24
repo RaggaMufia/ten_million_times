@@ -1,0 +1,14 @@
+lang      size in bytes
+#######################
+rust             650192 
+rust-dyn           9880  
+C                  6720
+asm                 608
+java                470
+pyc                 172
+tcl                  92
+perl                 90
+bash                 86
+lua                  81
+python               77
+ruby                 54
