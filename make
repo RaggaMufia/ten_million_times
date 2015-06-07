@@ -8,7 +8,7 @@ DEBUG= # set to 1
 
 
 suites=( hello startup increment )
-types=( asm c rs pl pyc py lua rb java tcl sh )
+types=( asm c rs pl pyc py lua rb java tcl sbcl sh )
 command=$1
 
 cmd_line() {
@@ -30,7 +30,7 @@ cmd_line() {
             class=${first_char}${rest_char}
             echo "java $class"
             ;;
-        lua|sh|pl|rb|py|tcl)
+        lua|sh|pl|rb|py|tcl|sbcl)
             echo "./$exe"
             ;;
         pyc)

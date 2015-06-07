@@ -1,0 +1,5 @@
+#!/usr/bin/sbcl --script
+
+(dotimes (i 10000000 )
+         (format t "hello~%"))
+(exit)
