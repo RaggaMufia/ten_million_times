@@ -1,0 +1,7 @@
+#!/usr/bin/sbcl --script
+
+(let ((s 0))
+  (dotimes (i 10000000 s)
+    (incf s 1))
+  (print s))
+(exit)
