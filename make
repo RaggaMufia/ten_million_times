@@ -84,6 +84,9 @@ case "$command" in
         run increment
         run startup
         ;;
+    list)
+        echo "${types[@]}"
+        ;;
     build)
         build
         ;;
