@@ -10,6 +10,7 @@ DEBUG= # set to 1
 suites=( hello startup increment )
 types=( asm c rs pl pyc py lua rb java tcl sbcl sh )
 command=$1
+typ=$2
 
 cmd_line() {
     local name=$1
@@ -78,6 +79,10 @@ build() {
 
 case "$command" in
     run)
+        if [ "$typ" ]; then
+            types=( "$typ" )
+        fi
+
         export TIMEFORMAT=$'%3R\t%3U\t%3S'
         run hello "with output"
         run hello "without output" >/dev/null
