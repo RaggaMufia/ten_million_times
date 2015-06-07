@@ -44,8 +44,8 @@ cmd_line() {
 # run "hello" "without output"
 # 
 run() {
-    local name=$1
-    local comment=$2
+    local name="$1"
+    local comment="$2"
 
     echo "execution time for $name $comment" >&2
 
