@@ -1,8 +1,22 @@
 #!/bin/bash
-#
-# ./make run
-# ./make build
-# ./make clean
+
+help() {
+   echo 'usage: ./make --help'
+   echo '       ./make run'
+   echo '       ./make run [lang]'
+   echo '       ./make list'
+   echo '       ./make build'
+   echo '       ./make clean'
+   echo
+   echo '  ./make run      - run all language benchmarks'
+   echo '  ./make run LANG - run only benchmark for language LANG'
+   echo '  ./make list     - list known languages'
+   echo '  ./make build    - compile stuff, generate diagram'
+   echo '  ./make clean    - clean up artifacts'
+   exit 1
+}
+
+[ "$1" == "--help" ] && help
 
 DEBUG= # set to 1
 
