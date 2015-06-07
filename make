@@ -72,6 +72,8 @@ build() {
         # Python
         pycompile $suite.pyc
     done
+
+    gnuplot -c analysis.gnu
 }
 
 case "$command" in
